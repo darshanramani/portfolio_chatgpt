@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b10" />
+  <meta name="description" content="Darshan Ramani — AI/ML Engineer portfolio." />
+  <title>Darshan Ramani — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand magnetic">
+      <span class="brand-bracket">&lt;</span>darshan.ramani<span class="brand-bracket">/&gt;</span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#experience">experience</a>
+      <a href="#skills">stack</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <button class="menu-btn magnetic" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="#experience">experience</a>
+    <a href="#skills">stack</a>
+    <a href="#projects">projects</a>
+    <a href="#education">education</a>
+    <a href="#contact">contact</a>
+  </div>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="grid-overlay"></div>
+
+      <div class="hero-inner">
+        <div class="eyebrow reveal">
+          <span class="status-dot"></span>
+          AI/ML Engineer · Ontario, Canada
+        </div>
+
+        <h1 class="hero-title" aria-label="I build systems that retrieve, reason, automate, and ship.">
+          <span class="line split-text">I build systems that</span>
+          <span class="line accent-line">
+            <span class="rotating-word" data-words='["retrieve.","reason.","automate.","ship."]'>retrieve.</span>
+          </span>
+        </h1>
+
+        <p class="hero-copy reveal">
+          2+ years building production RAG pipelines, LLM applications, document intelligence,
+          data systems, and MLOps workflows across consulting and enterprise environments.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary magnetic" href="#projects"><span>Explore work</span><b>↘</b></a>
+          <a class="btn btn-ghost magnetic" href="mailto:darshanramani1222@gmail.com"><span>Email me</span><b>→</b></a>
+        </div>
+
+        <div class="hero-console glass reveal" id="retrieval-demo">
+          <div class="console-head">
+            <div class="console-dots"><i></i><i></i><i></i></div>
+            <span>retrieval_demo.py</span>
+            <span class="live-badge">LIVE</span>
+          </div>
+          <div class="console-body">
+            <div class="query-line">
+              <span class="prompt">&gt;</span>
+              <input id="queryInput" type="text" placeholder="ask about RAG, MLOps, Databricks, LLMs…" autocomplete="off" />
+              <button id="retrieveBtn" class="magnetic">Retrieve</button>
+            </div>
+            <div class="quick-prompts">
+              <button data-query="RAG pipelines">RAG pipelines</button>
+              <button data-query="MLOps and Docker">MLOps & Docker</button>
+              <button data-query="Databricks ETL">Databricks ETL</button>
+              <button data-query="LLM applications">LLM applications</button>
+            </div>
+            <div class="retrieval-output" id="retrievalOutput">
+              <div class="output-meta"><span>system</span><span>ready</span></div>
+              <p>Ask a question or choose a prompt above. This demo searches a local experience knowledge base — no backend required.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-cue">
+          <span>scroll to inspect</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="section-shell">
+        <div class="section-kicker reveal">01 · Career, as a pipeline</div>
+        <div class="section-heading-row">
+          <h2 class="section-title reveal">Ingest → Transform → Extract → Serve</h2>
+          <p class="section-desc reveal">
+            One throughline: turning raw data and documents into systems people can query, trust, and use.
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <div class="pipeline-line"><div class="pipeline-fill"></div></div>
+
+          <article class="career-card reveal-card" data-step="01">
+            <div class="step-marker"><span>01</span></div>
+            <div class="career-meta">Ingest · enterprise foundations</div>
+            <h3>Deloitte <span>— Data Scientist</span></h3>
+            <p>Jan 2023 – Jun 2023 · Ahmedabad, India</p>
+            <ul>
+              <li>Built ML solutions on Azure Databricks over datasets exceeding 40M records.</li>
+              <li>Built ETL and feature pipelines with PySpark and Delta Lake, cutting data preparation time by 45%.</li>
+              <li>Ran early GenAI proof-of-concepts using Azure OpenAI and LangChain.</li>
+            </ul>
+            <div class="card-tags"><span>Azure Databricks</span><span>PySpark</span><span>Delta Lake</span></div>
+          </article>
+
+          <article class="career-card reveal-card" data-step="02">
+            <div class="step-marker"><span>02</span></div>
+            <div class="career-meta">Transform · ETL & forecasting</div>
+            <h3>Vertex Blue India <span>— Data Scientist</span></h3>
+            <p>Dec 2023 – Jan 2025 · Ahmedabad, India</p>
+            <ul>
+              <li>Optimized Databricks ETL pipelines for telecom workloads and resolved mismatched call-data issues.</li>
+              <li>Improved forecasting accuracy by 18% through iterative feature engineering.</li>
+              <li>Shipped Power BI dashboards on SQL pipelines, cutting manual reporting effort by 50%.</li>
+            </ul>
+            <div class="card-tags"><span>Databricks</span><span>Forecasting</span><span>Power BI</span></div>
+          </article>
+
+          <article class="career-card reveal-card" data-step="03">
+            <div class="step-marker"><span>03</span></div>
+            <div class="career-meta">Extract · documents into signal</div>
+            <h3>HubBroker IT Solutions <span>— AI/ML Developer</span></h3>
+            <p>Jan 2025 – Jun 2025 · Ahmedabad, India</p>
+            <ul>
+              <li>Built OCR + NLP document intelligence pipelines that cut manual invoice processing time by 60%.</li>
+              <li>Integrated OpenAI APIs, LangChain, and vector search for semantic document search and internal Q&A.</li>
+              <li>Containerized services with Docker and GitHub Actions for repeatable deployment.</li>
+            </ul>
+            <div class="card-tags"><span>OCR</span><span>LangChain</span><span>Vector Search</span></div>
+          </article>
+
+          <article class="career-card reveal-card" data-step="04">
+            <div class="step-marker"><span>04</span></div>
+            <div class="career-meta">Serve · production RAG & MLOps</div>
+            <h3>HCLTech <span>— AI/ML Engineer</span></h3>
+            <p>Nov 2025 – May 2026 · Canada</p>
+            <ul>
+              <li>Shipped a production RAG solution using LangChain, Azure OpenAI, Azure AI Search, and FastAPI.</li>
+              <li>Built LLM-powered summarization and Q&A services with prompt engineering, function calling, and embeddings.</li>
+              <li>Automated deployment with Docker, Kubernetes, and Azure DevOps CI/CD.</li>
+            </ul>
+            <div class="card-tags"><span>RAG</span><span>Azure OpenAI</span><span>Kubernetes</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-shell">
+        <div class="section-kicker reveal">02 · Stack</div>
+        <h2 class="section-title reveal">What’s under the hood</h2>
+
+        <div class="marquee-wrap reveal">
+          <div class="marquee">
+            <span>RAG</span><i>✦</i><span>LANGCHAIN</span><i>✦</i><span>PYTHON</span><i>✦</i><span>AZURE OPENAI</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>DOCKER</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>DATABRICKS</span><i>✦</i>
+            <span>RAG</span><i>✦</i><span>LANGCHAIN</span><i>✦</i><span>PYTHON</span><i>✦</i><span>AZURE OPENAI</span><i>✦</i><span>FASTAPI</span><i>✦</i><span>DOCKER</span><i>✦</i><span>PYTORCH</span><i>✦</i><span>DATABRICKS</span><i>✦</i>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">01</span>
+            <h3>AI / ML</h3>
+            <p>LLMs, RAG, NLP, prompt engineering, predictive modeling, anomaly detection, responsible AI.</p>
+          </article>
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">02</span>
+            <h3>Frameworks</h3>
+            <p>LangChain, OpenAI API, Hugging Face, Scikit-learn, XGBoost, PyTorch, spaCy, MLflow.</p>
+          </article>
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">03</span>
+            <h3>Cloud & Data</h3>
+            <p>Azure OpenAI, Azure AI Search, Azure ML, Azure Databricks, Data Factory, PySpark, Delta Lake.</p>
+          </article>
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">04</span>
+            <h3>Apps & APIs</h3>
+            <p>FastAPI, REST APIs, OCR, IDP, ChromaDB, PostgreSQL, SQL, Power BI.</p>
+          </article>
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">05</span>
+            <h3>MLOps</h3>
+            <p>Docker, Kubernetes, Azure DevOps, GitHub Actions, CI/CD, model monitoring.</p>
+          </article>
+          <article class="skill-card tilt-card reveal-card">
+            <span class="skill-index">06</span>
+            <h3>Engineering</h3>
+            <p>Python, Git, Agile/Scrum, API integration, vector databases, data pipelines.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-shell">
+        <div class="section-kicker reveal">03 · Selected project</div>
+        <div class="project-feature reveal-card">
+          <div class="project-copy">
+            <div class="project-label">FEATURED / 01</div>
+            <h2>Anime Recommendation System</h2>
+            <h3>Semantic recommender, RAG-style.</h3>
+            <p>
+              An LLM-powered recommendation engine using retrieval-augmented generation,
+              LangChain, Hugging Face embeddings, ChromaDB and FastAPI to surface personalized
+              anime picks through semantic similarity rather than keyword matching.
+            </p>
+            <div class="project-tags">
+              <span>RAG</span><span>LangChain</span><span>Embeddings</span><span>ChromaDB</span><span>FastAPI</span><span>Docker</span>
+            </div>
+          </div>
+
+          <div class="project-visual">
+            <div class="system-window">
+              <div class="window-bar">
+                <span>semantic_recommender</span>
+                <span>● online</span>
+              </div>
+              <div class="flow">
+                <div class="flow-node active"><small>01</small><b>query</b></div>
+                <div class="flow-arrow"><span>→</span></div>
+                <div class="flow-node"><small>02</small><b>embed</b></div>
+                <div class="flow-arrow"><span>→</span></div>
+                <div class="flow-node"><small>03</small><b>ChromaDB</b></div>
+                <div class="flow-arrow"><span>→</span></div>
+                <div class="flow-node"><small>04</small><b>rank</b></div>
+                <div class="flow-arrow"><span>→</span></div>
+                <div class="flow-node"><small>05</small><b>FastAPI</b></div>
+              </div>
+              <div class="code-lines">
+                <span style="--w:88%"></span><span style="--w:64%"></span><span style="--w:78%"></span>
+                <span style="--w:52%"></span><span style="--w:92%"></span>
+              </div>
+              <div class="pulse-ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <div class="section-shell">
+        <div class="section-kicker reveal">04 · Education</div>
+        <h2 class="section-title reveal">Grounding</h2>
+        <div class="education-grid">
+          <article class="edu-card reveal-card">
+            <span>2025 — 2026</span>
+            <h3>Lakehead University</h3>
+            <p>Master of Science, Computer Science</p>
+            <small>Thunder Bay, Canada</small>
+          </article>
+          <article class="edu-card reveal-card">
+            <span>2019 — 2023</span>
+            <h3>Nirma University</h3>
+            <p>B.Tech, Computer Science & Engineering</p>
+            <small>Ahmedabad, India</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-glow"></div>
+      <div class="section-shell">
+        <div class="section-kicker reveal">05 · Contact</div>
+        <h2 class="contact-title reveal">Let’s build something<br><em>useful.</em></h2>
+        <p class="contact-copy reveal">Open to AI/ML, Applied AI, Data Engineering, and production AI opportunities.</p>
+
+        <div class="terminal reveal-card">
+          <div class="terminal-top">
+            <span>darshan@portfolio:~</span>
+            <span>bash</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="cmd">$ whoami</span></p>
+            <p>→ Darshan Ramani, AI/ML Engineer based in Ontario, Canada</p>
+            <p><span class="cmd">$ contact --email</span></p>
+            <p><a href="mailto:darshanramani1222@gmail.com">darshanramani1222@gmail.com</a></p>
+            <p><span class="cmd">$ open --linkedin</span></p>
+            <p><a href="https://www.linkedin.com/in/darshan-ramani" target="_blank" rel="noreferrer">linkedin.com/in/darshan-ramani</a></p>
+            <p><span class="cmd">$ open --github</span></p>
+            <p><a href="https://github.com/darshanramani" target="_blank" rel="noreferrer">github.com/darshanramani</a></p>
+            <p><span class="cmd">$</span> <span class="terminal-cursor">█</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Darshan Ramani</span>
+    <span>HTML · CSS · Vanilla JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
